@@ -29,14 +29,22 @@ class PadraoSingletonLpVApplicationTests {
     @Test
     void testConfiguracoesPeristemEntreChamadas() {
         ConfiguracaoSistema config1 = ConfiguracaoSistema.getInstance();
-        String temaPrimeira = config1.getTema();
+        String moedaBaseAnterior = config1.getMoedaBase();
+        String moedaCotadaAnterior = config1.getMoedaCotada();
+        double taxaAnterior = config1.getTaxa();
 
-        config1.setTema("Claro");
+        config1.setMoedaBase("EUR");
+        config1.setMoedaCotada("BRL");
+        config1.setTaxa(5.65);
 
         ConfiguracaoSistema config2 = ConfiguracaoSistema.getInstance();
-        assertEquals("Claro", config2.getTema(), "Mudança de tema deve persistir no singleton");
+        assertEquals("EUR", config2.getMoedaBase(), "Mudança da moeda base deve persistir no singleton");
+        assertEquals("BRL", config2.getMoedaCotada(), "Mudança da moeda cotada deve persistir no singleton");
+        assertEquals(5.65, config2.getTaxa(), 0.0001, "Mudança da taxa deve persistir no singleton");
 
-        config1.setTema(temaPrimeira);
+        config1.setMoedaBase(moedaBaseAnterior);
+        config1.setMoedaCotada(moedaCotadaAnterior);
+        config1.setTaxa(taxaAnterior);
     }
 
     @Test
@@ -76,8 +84,8 @@ class PadraoSingletonLpVApplicationTests {
     void testInicializacaoCorreta() {
         ConfiguracaoSistema config = ConfiguracaoSistema.getInstance();
         
-        assertEquals("Padrão Singleton LP V", config.getNomeSistema(), "Nome sistema incorreto");
-        assertEquals("1.0.0", config.getVersao(), "Versão incorreta");
-        assertEquals("Escuro", config.getTema(), "Tema padrão incorreto");
+        assertEquals("USD", config.getMoedaBase(), "Moeda base padrão incorreta");
+        assertEquals("BRL", config.getMoedaCotada(), "Moeda cotada padrão incorreta");
+        assertEquals(5.10, config.getTaxa(), 0.0001, "Taxa padrão incorreta");
     }
 }

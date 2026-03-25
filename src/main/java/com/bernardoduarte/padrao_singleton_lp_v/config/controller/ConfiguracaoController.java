@@ -4,20 +4,24 @@ import com.bernardoduarte.padrao_singleton_lp_v.config.ConfiguracaoSistema;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/configuracoes")
+@RequestMapping("/api/cambio")
 public class ConfiguracaoController {
 
     @GetMapping
-    public ConfiguracaoSistema verConfiguracoes() {
+    public ConfiguracaoSistema verTaxa() {
         return ConfiguracaoSistema.getInstance();
     }
 
-    @PostMapping("/alterar-tema")
-    public String alterarTema(@RequestParam String novoTema) {
+    @PostMapping("/atualizar")
+    public String atualizarTaxa(@RequestParam String moedaBase,
+                                @RequestParam String moedaCotada,
+                                @RequestParam double novaTaxa) {
         ConfiguracaoSistema config = ConfiguracaoSistema.getInstance();
-        config.setTema(novoTema);
+        config.setMoedaBase(moedaBase);
+        config.setMoedaCotada(moedaCotada);
+        config.setTaxa(novaTaxa);
 
-        return "Tema alterado com sucesso para: " + novoTema +
-                ". Acesse GET /api/configuracoes para verificar.";
+        return "Taxa de câmbio atualizada com sucesso para " + moedaBase + "/" + moedaCotada +
+                " = " + novaTaxa + ". Acesse GET /api/cambio para verificar.";
     }
 }

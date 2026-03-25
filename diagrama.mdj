@@ -61,9 +61,9 @@
 											"parentStyle": true,
 											"left": 69,
 											"top": 271,
-											"width": 278.1259765625,
+											"width": 324.38134765625,
 											"height": 13,
-											"text": "ConfiguracaoSistema"
+											"text": "GerenciadorCambioSingleton"
 										},
 										{
 											"_type": "LabelView",
@@ -95,7 +95,7 @@
 									"parentStyle": true,
 									"left": 64,
 									"top": 264,
-									"width": 288.1259765625,
+									"width": 334.38134765625,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGdJw8uI4DMXEw="
@@ -133,10 +133,10 @@
 											"parentStyle": true,
 											"left": 69,
 											"top": 294,
-											"width": 278.1259765625,
+											"width": 324.38134765625,
 											"height": 13,
 											"underline": true,
-											"text": "«volatile»-instancia: ConfiguracaoSistema = null",
+											"text": "«volatile»-instancia: GerenciadorCambioSingleton = null",
 											"horizontalAlignment": 0
 										},
 										{
@@ -152,9 +152,9 @@
 											"parentStyle": true,
 											"left": 69,
 											"top": 309,
-											"width": 278.1259765625,
+											"width": 324.38134765625,
 											"height": 13,
-											"text": "-nomeSistema: String = Padrão Singleton LP V",
+											"text": "-moedaBase: String = USD",
 											"horizontalAlignment": 0
 										},
 										{
@@ -170,9 +170,9 @@
 											"parentStyle": true,
 											"left": 69,
 											"top": 324,
-											"width": 278.1259765625,
+											"width": 324.38134765625,
 											"height": 13,
-											"text": "-versao: String = 1.0.0",
+											"text": "-moedaCotada: String = BRL",
 											"horizontalAlignment": 0
 										},
 										{
@@ -188,9 +188,9 @@
 											"parentStyle": true,
 											"left": 69,
 											"top": 339,
-											"width": 278.1259765625,
+											"width": 324.38134765625,
 											"height": 13,
-											"text": "-tema: String = Escuro",
+											"text": "-taxa: double = 5.10",
 											"horizontalAlignment": 0
 										}
 									],
@@ -198,7 +198,7 @@
 									"parentStyle": true,
 									"left": 64,
 									"top": 289,
-									"width": 288.1259765625,
+									"width": 334.38134765625,
 									"height": 68
 								},
 								{
@@ -224,9 +224,9 @@
 											"parentStyle": true,
 											"left": 69,
 											"top": 362,
-											"width": 278.1259765625,
+											"width": 324.38134765625,
 											"height": 13,
-											"text": "-ConfiguracaoSistema()",
+											"text": "-GerenciadorCambioSingleton()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -242,7 +242,7 @@
 											"parentStyle": true,
 											"left": 69,
 											"top": 377,
-											"width": 278.1259765625,
+											"width": 324.38134765625,
 											"height": 13,
 											"underline": true,
 											"text": "+getInstance()",
@@ -261,10 +261,10 @@
 											"parentStyle": true,
 											"left": 69,
 											"top": 392,
-											"width": 278.1259765625,
+											"width": 324.38134765625,
 											"height": 13,
 											"underline": true,
-											"text": "+getNomeSistema()",
+											"text": "+getMoedaBase()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -280,9 +280,9 @@
 											"parentStyle": true,
 											"left": 69,
 											"top": 407,
-											"width": 278.1259765625,
+											"width": 324.38134765625,
 											"height": 13,
-											"text": "+setNomeSistema(nomeSistema: String)",
+											"text": "+setMoedaBase(moedaBase: String)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -298,9 +298,9 @@
 											"parentStyle": true,
 											"left": 69,
 											"top": 422,
-											"width": 278.1259765625,
+											"width": 324.38134765625,
 											"height": 13,
-											"text": "+getVersao()",
+											"text": "+getMoedaCotada()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -316,9 +316,9 @@
 											"parentStyle": true,
 											"left": 69,
 											"top": 437,
-											"width": 278.1259765625,
+											"width": 324.38134765625,
 											"height": 13,
-											"text": "+setVersao(versao: String)",
+											"text": "+setMoedaCotada(moedaCotada: String)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -334,9 +334,9 @@
 											"parentStyle": true,
 											"left": 69,
 											"top": 452,
-											"width": 278.1259765625,
+											"width": 324.38134765625,
 											"height": 13,
-											"text": "+getTema()",
+											"text": "+getTaxa()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -352,9 +352,9 @@
 											"parentStyle": true,
 											"left": 69,
 											"top": 467,
-											"width": 278.1259765625,
+											"width": 324.38134765625,
 											"height": 13,
-											"text": "+setTema(tema: String)",
+											"text": "+setTaxa(taxa: double)",
 											"horizontalAlignment": 0
 										}
 									],
@@ -362,7 +362,7 @@
 									"parentStyle": true,
 									"left": 64,
 									"top": 357,
-									"width": 288.1259765625,
+									"width": 334.38134765625,
 									"height": 128
 								},
 								{
@@ -401,7 +401,7 @@
 							"containerChangeable": true,
 							"left": 64,
 							"top": 264,
-							"width": 287.1259765625,
+							"width": 333.38134765625,
 							"height": 221,
 							"nameCompartment": {
 								"$ref": "AAAAAAGdJw8uI4DLTwI="
@@ -448,8 +448,8 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 160,
-											"top": 112,
+											"left": 192,
+											"top": 128,
 											"height": 13
 										},
 										{
@@ -460,9 +460,9 @@
 											},
 											"font": "Arial;13;1",
 											"parentStyle": true,
-											"left": 517,
-											"top": 343,
-											"width": 155.9716796875,
+											"left": 533,
+											"top": 351,
+											"width": 443.6220703125,
 											"height": 13,
 											"text": "ConfiguracaoController"
 										},
@@ -475,8 +475,8 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 160,
-											"top": 112,
+											"left": 192,
+											"top": 128,
 											"width": 73.67724609375,
 											"height": 13,
 											"text": "(from Model)"
@@ -490,17 +490,17 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 160,
-											"top": 112,
+											"left": 192,
+											"top": 128,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 512,
-									"top": 336,
-									"width": 165.9716796875,
+									"left": 528,
+									"top": 344,
+									"width": 453.6220703125,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGdJxjsmIFvGVw="
@@ -526,9 +526,9 @@
 									},
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 512,
-									"top": 361,
-									"width": 165.9716796875,
+									"left": 528,
+									"top": 369,
+									"width": 453.6220703125,
 									"height": 10
 								},
 								{
@@ -552,11 +552,11 @@
 											},
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 517,
-											"top": 376,
-											"width": 155.9716796875,
+											"left": 533,
+											"top": 384,
+											"width": 443.6220703125,
 											"height": 13,
-											"text": "+verConfiguracoes()",
+											"text": "+verTaxa()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -570,19 +570,19 @@
 											},
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 517,
-											"top": 391,
-											"width": 155.9716796875,
+											"left": 533,
+											"top": 399,
+											"width": 443.6220703125,
 											"height": 13,
-											"text": "+alterarTema(tema: String)",
+											"text": "+atualizarTaxa(moedaBase: String, moedaCotada: String, novaTaxa: double)",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 512,
-									"top": 371,
-									"width": 165.9716796875,
+									"left": 528,
+									"top": 379,
+									"width": 453.6220703125,
 									"height": 38
 								},
 								{
@@ -597,8 +597,8 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 80,
-									"top": 56,
+									"left": 96,
+									"top": 64,
 									"width": 10,
 									"height": 10
 								},
@@ -614,8 +614,8 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 80,
-									"top": 56,
+									"left": 96,
+									"top": 64,
 									"width": 10,
 									"height": 10
 								}
@@ -623,9 +623,9 @@
 							"font": "Arial;13;0",
 							"parentStyle": false,
 							"containerChangeable": true,
-							"left": 512,
-							"top": 336,
-							"width": 164.9716796875,
+							"left": 528,
+							"top": 344,
+							"width": 452.6220703125,
 							"height": 73,
 							"nameCompartment": {
 								"$ref": "AAAAAAGdJxjsmIFu8IM="
@@ -728,7 +728,7 @@
 							"tail": {
 								"$ref": "AAAAAAGdJxjsmIFtVqY="
 							},
-							"points": "586:336;586:308;351:308",
+							"points": "586:344;586:308;397:308",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGdJxxhLYI5cgQ="
@@ -762,7 +762,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "ConfiguracaoSistema",
+					"name": "GerenciadorCambioSingleton",
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
@@ -785,10 +785,10 @@
 							"_parent": {
 								"$ref": "AAAAAAGdJw8uIoDIoAE="
 							},
-							"name": "nomeSistema",
+							"name": "moedaBase",
 							"visibility": "private",
 							"type": "String",
-							"defaultValue": "Padrão Singleton LP V"
+							"defaultValue": "USD"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -796,10 +796,10 @@
 							"_parent": {
 								"$ref": "AAAAAAGdJw8uIoDIoAE="
 							},
-							"name": "versao",
+							"name": "moedaCotada",
 							"visibility": "private",
 							"type": "String",
-							"defaultValue": "1.0.0"
+							"defaultValue": "BRL"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -807,10 +807,10 @@
 							"_parent": {
 								"$ref": "AAAAAAGdJw8uIoDIoAE="
 							},
-							"name": "tema",
+							"name": "taxa",
 							"visibility": "private",
-							"type": "String",
-							"defaultValue": "Escuro"
+							"type": "double",
+							"defaultValue": "5.10"
 						}
 					],
 					"operations": [
@@ -820,7 +820,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGdJw8uIoDIoAE="
 							},
-							"name": "ConfiguracaoSistema",
+							"name": "GerenciadorCambioSingleton",
 							"visibility": "private"
 						},
 						{
@@ -838,7 +838,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGdJw8uIoDIoAE="
 							},
-							"name": "getNomeSistema",
+							"name": "getMoedaBase",
 							"isStatic": true
 						},
 						{
@@ -847,7 +847,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGdJw8uIoDIoAE="
 							},
-							"name": "setNomeSistema",
+							"name": "setMoedaBase",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -855,7 +855,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGdJxTPRYE1MdI="
 									},
-									"name": "nomeSistema",
+									"name": "moedaBase",
 									"type": "String"
 								}
 							]
@@ -866,7 +866,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGdJw8uIoDIoAE="
 							},
-							"name": "getVersao"
+							"name": "getMoedaCotada"
 						},
 						{
 							"_type": "UMLOperation",
@@ -874,7 +874,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGdJw8uIoDIoAE="
 							},
-							"name": "setVersao",
+							"name": "setMoedaCotada",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -882,7 +882,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGdJxTktoFBZZE="
 									},
-									"name": "versao",
+									"name": "moedaCotada",
 									"type": "String"
 								}
 							]
@@ -893,7 +893,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGdJw8uIoDIoAE="
 							},
-							"name": "getTema"
+							"name": "getTaxa"
 						},
 						{
 							"_type": "UMLOperation",
@@ -901,7 +901,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGdJw8uIoDIoAE="
 							},
-							"name": "setTema",
+							"name": "setTaxa",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -909,8 +909,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGdJxUB+4FN6AU="
 									},
-									"name": "tema",
-									"type": "String"
+									"name": "taxa",
+									"type": "double"
 								}
 							]
 						}
@@ -945,7 +945,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGdJxjsmIFrfDI="
 							},
-							"name": "verConfiguracoes"
+							"name": "verTaxa"
 						},
 						{
 							"_type": "UMLOperation",
@@ -953,7 +953,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGdJxjsmIFrfDI="
 							},
-							"name": "alterarTema",
+							"name": "atualizarTaxa",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -961,8 +961,26 @@
 									"_parent": {
 										"$ref": "AAAAAAGdJxl5uoGdhCU="
 									},
-									"name": "tema",
+									"name": "moedaBase",
 									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGdJxoUW4Glrr5=",
+									"_parent": {
+										"$ref": "AAAAAAGdJxl5uoGdhCU="
+									},
+									"name": "moedaCotada",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGdJxoUW4Glrr6=",
+									"_parent": {
+										"$ref": "AAAAAAGdJxl5uoGdhCU="
+									},
+									"name": "novaTaxa",
+									"type": "double"
 								}
 							]
 						}

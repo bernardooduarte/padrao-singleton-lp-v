@@ -4,14 +4,14 @@ public class ConfiguracaoSistema {
 
     private static volatile ConfiguracaoSistema instancia;
 
-    private String nomeSistema;
-    private String versao;
-    private String tema;
+    private String moedaBase;
+    private String moedaCotada;
+    private double taxa;
 
     private ConfiguracaoSistema() {
-        this.nomeSistema = "Padrão Singleton LP V";
-        this.versao = "1.0.0";
-        this.tema = "Escuro";
+        this.moedaBase = "USD";
+        this.moedaCotada = "BRL";
+        this.taxa = 5.10;
     }
 
     public static ConfiguracaoSistema getInstance() {
@@ -25,27 +25,27 @@ public class ConfiguracaoSistema {
         return instancia;
     }
 
-    public String getNomeSistema() {
-        return nomeSistema;
+    public String getMoedaBase() {
+        return moedaBase;
     }
 
-    public void setNomeSistema(String nomeSistema) {
-        this.nomeSistema = nomeSistema;
+    public void setMoedaBase(String moedaBase) {
+        this.moedaBase = moedaBase;
     }
 
-    public String getVersao() {
-        return versao;
+    public String getMoedaCotada() {
+        return moedaCotada;
     }
 
-    public void setVersao(String versao) {
-        this.versao = versao;
+    public void setMoedaCotada(String moedaCotada) {
+        this.moedaCotada = moedaCotada;
     }
 
-    public String getTema() {
-        return tema;
+    public double getTaxa() {
+        return taxa;
     }
 
-    public void setTema(String tema) {
-        this.tema = tema;
+    public void setTaxa(double taxa) {
+        this.taxa = taxa;
     }
 }
